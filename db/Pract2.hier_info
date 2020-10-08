@@ -1,0 +1,42 @@
+|Pract2
+AmayorB <= Comparador2:inst.AmayorB
+A0 => Comparador2:inst.A0
+A1 => Comparador2:inst.A1
+B0 => Comparador2:inst.B0
+B1 => Comparador2:inst.B1
+AigualB <= Comparador2:inst.AigualB
+AmenorB <= Comparador2:inst.AmenorB
+
+
+|Pract2|Comparador2:inst
+AmayorB <= Comparador:inst.AmayorB
+A0 => Comparador:inst.A0
+A0 => Comparador:inst1.B0
+A1 => Comparador:inst.A1
+A1 => Comparador:inst1.B1
+B0 => Comparador:inst.B0
+B0 => Comparador:inst1.A0
+B1 => Comparador:inst.B1
+B1 => Comparador:inst1.A1
+AmenorB <= Comparador:inst1.AmayorB
+AigualB <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pract2|Comparador2:inst|Comparador:inst
+AmayorB <= P7.DB_MAX_OUTPUT_PORT_TYPE
+A0 => P4.IN0
+B0 => P1.IN0
+B1 => P2.IN0
+A1 => P5.IN1
+A1 => P3.IN0
+
+
+|Pract2|Comparador2:inst|Comparador:inst1
+AmayorB <= P7.DB_MAX_OUTPUT_PORT_TYPE
+A0 => P4.IN0
+B0 => P1.IN0
+B1 => P2.IN0
+A1 => P5.IN1
+A1 => P3.IN0
+
+
